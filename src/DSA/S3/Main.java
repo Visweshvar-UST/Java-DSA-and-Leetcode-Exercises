@@ -30,6 +30,8 @@ public class Main {
         ll.append(6);
 
         System.out.println(ll.get(1).value);
+
+
     }
 
 }
