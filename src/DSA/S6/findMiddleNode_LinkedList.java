@@ -68,6 +68,8 @@ public class findMiddleNode_LinkedList {
         }
     }
 
+    // just a try
+    // solution
     public Node f(){
 //        if (head == null) return null; check about edge case. if not needed
         Node fast = head;
@@ -79,6 +81,7 @@ public class findMiddleNode_LinkedList {
         return slow;
     }
 
+    // /v
     public Node findMiddleNode(){
         if(head == null) return null;
         else if(head.next == null) return head;
