@@ -1,4 +1,4 @@
-package DSA.S3;
+package DSA.S4;
 
 public class Node {
     private int Value;

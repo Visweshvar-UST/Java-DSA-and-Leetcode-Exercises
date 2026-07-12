@@ -2,34 +2,16 @@ package DSA.S3;
 
 public class Main {
     public static void main(String[] args) {
-        LinkedList ll = new LinkedList(5);
+    Cookie c1 = new Cookie("Green");
+    Cookie c2 = new Cookie("blue");
 
-        ll.getHead();
-        ll.getTail();
-        ll.getLength();
+    System.out.println(c1.getColor());
+    System.out.println(c2.getColor());
 
-        ll.printList();
+    c2.setColor("Yellow");
 
-        ll.append(4);
+    System.out.println(c1.getColor());
+    System.out.println(c2.getColor());
 
-        System.out.println(ll.removeLast().value);
-        System.out.println(ll.removeLast().value);
-        System.out.println(ll.removeLast());
-
-        ll.append(7);
-        ll.append(8);
-
-        ll.printList();
-
-        System.out.println(ll.removeFirst().value);
-        System.out.println(ll.removeFirst().value);
-        System.out.println(ll.removeFirst());
-
-
-        ll.append(5);
-        ll.append(6);
-
-        System.out.println(ll.get(1).value);
     }
-
 }
