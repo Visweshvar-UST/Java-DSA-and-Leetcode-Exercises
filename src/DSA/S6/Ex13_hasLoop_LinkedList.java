@@ -1,6 +1,6 @@
 package DSA.S6;
 
-public class hasLoop_LinkedList {
+public class Ex13_hasLoop_LinkedList {
 
     private Node head;
     private Node tail;
@@ -15,7 +15,7 @@ public class hasLoop_LinkedList {
         }
     }
 
-    public hasLoop_LinkedList(int value) {
+    public Ex13_hasLoop_LinkedList(int value) {
         Node newNode = new Node(value);
         head = newNode;
         tail = newNode;

@@ -1,6 +1,6 @@
 package DSA.S6;
 
-public class findMiddleNode_LinkedList {
+public class Ex12_findMiddleNode_LinkedList {
 
     private Node head;
     private Node tail;
@@ -14,7 +14,7 @@ public class findMiddleNode_LinkedList {
         }
     }
 
-    public findMiddleNode_LinkedList(int value) {
+    public Ex12_findMiddleNode_LinkedList(int value) {
         Node newNode = new Node(value);
         head = newNode;
         tail = newNode;
