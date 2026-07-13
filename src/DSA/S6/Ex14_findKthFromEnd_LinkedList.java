@@ -60,53 +60,53 @@ public class Ex14_findKthFromEnd_LinkedList {
         }
     }
 
-    // public Node findKthFromEndOwn(int k) {
-    //     //   +===================================================+
-    //     //   |               WRITE YOUR CODE HERE                |
-    //     //   | Description:                                      |
-    //     //   | - Finds the k-th node from the end of a singly    |
-    //     //   |   linked list.                                    |
-    //     //   | - Returns the node at that position or null if    |
-    //     //   |   `k` is invalid or exceeds the list length.      |
-    //     //   |                                                   |
-    //     //   | Behavior:                                         |
-    //     //   | - Uses two pointers, `fast` and `slow`, starting  |
-    //     //   |   at the head of the list.                        |
-    //     //   | - Moves `fast` forward `k` nodes ahead of `slow`. |
-    //     //   | - Then moves both pointers together until `fast`  |
-    //     //   |   reaches the end.                                |
-    //     //   | - At that point, `slow` points to the k-th node   |
-    //     //   |   from the end and is returned.                   |
-    //     //   +===================================================+
-    //     if (k < 0) return null;
-    //     Node slow = head;
-    //     Node fast = head;
-    //     int length = 1;
-    //     int point = 1;
-    //     while(fast != null && fast.next != null){
-    //         slow = slow.next;
-    //         fast = fast.next.next;
-    //         length++;
-    //     }
-    //     point = length;
-    //     if(fast == null) length=length*2;
-    //     else if(fast.next == null) length=(length*2)-1;
-    //     length = length - k;
-    //     if(length < 0) return null;
-    //     if(length == 0) return head;
-    //     int moves = point - length;
-    //     if(moves < 0) {
-    //         for(int i = 0; i <= (moves * -1); i++){
-    //             slow = slow.next;
-    //         }
-    //     } else if(moves > 0) {
-    //         slow = head;
-    //         for(int i = 0; i < moves-1 ; i++){
-    //             slow = slow.next;
-    //         }
-    //     }
-    //     return slow;
-    // }
+     public Node findKthFromEndOwn(int k) {
+         //   +===================================================+
+         //   |               WRITE YOUR CODE HERE                |
+         //   | Description:                                      |
+         //   | - Finds the k-th node from the end of a singly    |
+         //   |   linked list.                                    |
+         //   | - Returns the node at that position or null if    |
+         //   |   `k` is invalid or exceeds the list length.      |
+         //   |                                                   |
+         //   | Behavior:                                         |
+         //   | - Uses two pointers, `fast` and `slow`, starting  |
+         //   |   at the head of the list.                        |
+         //   | - Moves `fast` forward `k` nodes ahead of `slow`. |
+         //   | - Then moves both pointers together until `fast`  |
+         //   |   reaches the end.                                |
+         //   | - At that point, `slow` points to the k-th node   |
+         //   |   from the end and is returned.                   |
+         //   +===================================================+
+         if (k < 0) return null;
+         Node slow = head;
+         Node fast = head;
+         int length = 1;
+         int point = 1;
+         while(fast != null && fast.next != null){
+             slow = slow.next;
+             fast = fast.next.next;
+             length++;
+         }
+         point = length;
+         if(fast == null) length=length*2;
+         else if(fast.next == null) length=(length*2)-1;
+         length = length - k;
+         if(length < 0) return null;
+         if(length == 0) return head;
+         int moves = point - length;
+         if(moves < 0) {
+             for(int i = 0; i <= (moves * -1); i++){
+                 slow = slow.next;
+             }
+         } else if(moves > 0) {
+             slow = head;
+             for(int i = 0; i < moves-1 ; i++){
+                 slow = slow.next;
+             }
+         }
+         return slow;
+     }
 
     public Node findKthFromEnd(int k) {
         //   +===================================================+
