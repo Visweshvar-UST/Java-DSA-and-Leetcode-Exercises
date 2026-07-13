@@ -140,6 +140,48 @@ public class Ex14_findKthFromEnd_LinkedList {
         return slow;
     }
 
+    /**
+     * Definition for singly-linked list.
+     * public class ListNode {
+     *     int val;
+     *     ListNode next;
+     *     ListNode() {}
+     *     ListNode(int val) { this.val = val; }
+     *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+     * }
+     */
+    /*
+    // own
+    // https://leetcode.com/problems/remove-nth-node-from-end-of-list/
+    class Solution {
+        public ListNode removeNthFromEnd(ListNode head, int n) {
+            if (n<0 || head == null) return null;
+            ListNode slow = head;
+            ListNode pre = null;
+            ListNode fast = head;
+            for(int i = 0; i < n; i++){
+                if(fast == null) return null;
+                fast = fast.next;
+            }
+            while(fast != null){
+                pre = slow;
+                slow = slow.next;
+                fast = fast.next;
+            }
+            if(pre == null) {
+                head = head.next;
+                return head;
+            }
+            if(slow.next == null) {
+                pre.next = null;
+            } else {
+                pre.next = slow.next;
+                slow.next = null;
+            }
+            return head;
+        }
+    */
+
 }
 
 
