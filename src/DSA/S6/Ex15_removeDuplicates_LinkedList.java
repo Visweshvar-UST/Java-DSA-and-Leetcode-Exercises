@@ -1,6 +1,8 @@
 package DSA.S6;
 
 
+import java.util.HashSet;
+
 public class Ex15_removeDuplicates_LinkedList {
 
     private Node head;
@@ -73,20 +75,55 @@ public class Ex15_removeDuplicates_LinkedList {
 
     // WRITE THE REMOVEDUPLICATES METHOD HERE //
     // own passed in one run
-    public void removeDuplicates() {
-        if(head == null || head.next == null) return;
+    public void removeDuplicatesOwn() {
+        // if(head == null || head.next == null) return;
         Node curr = head;
         Node run = head;
         while(curr != null){
             while(run.next != null){
                 if(run.next.value == curr.value) {
                     run.next = run.next.next;
+                    length--; // i have missed
                     continue;
                 }
                 run = run.next;
             }
             curr = curr.next;
             run = curr;
+        }
+    }
+
+    // slight difference
+    public void removeDuplicatesGiven() {
+        Node current = head;
+        while (current != null) {
+            Node runner = current;
+            while (runner.next != null) {
+                if (runner.next.value == current.value) {
+                    runner.next = runner.next.next;
+                    length -= 1;
+                } else {
+                    runner = runner.next;
+                }
+            }
+            current = current.next;
+        }
+    }
+
+    public void removeDuplicates() {
+        // if(head == null || head.next == null) return;
+        HashSet<Integer> values = new HashSet<>();
+        Node pre = null;
+        Node curr = head;
+        while(curr != null){
+            if(values.contains(curr.value)) {
+                pre.next = curr.next;
+                length--;
+            } else {
+                values.add(curr.value);
+                pre = curr;
+            }
+            curr = curr.next;
         }
     }
 
