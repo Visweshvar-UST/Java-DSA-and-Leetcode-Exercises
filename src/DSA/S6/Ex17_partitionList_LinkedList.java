@@ -120,6 +120,42 @@ public class Ex17_partitionList_LinkedList {
         prev1.next = dummy2.next;
  
         head = dummy1.next;
-    }  
+    }
+
+    /**
+     * Definition for singly-linked list.
+     * public class ListNode {
+     *     int val;
+     *     ListNode next;
+     *     ListNode() {}
+     *     ListNode(int val) { this.val = val; }
+     *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+     * }
+     */
+//    http://leetcode.com/problems/partition-list/
+//    class Solution {
+//        public ListNode partition(ListNode head, int x) {
+//            if(head == null) return null;
+//            ListNode d1 = new ListNode(0);
+//            ListNode p1 = d1;
+//            ListNode d2 = new ListNode(0);
+//            ListNode p2 = d2;
+//            ListNode curr = head;
+//            while(curr != null){
+//                if(curr.val < x){
+//                    p1.next = curr;
+//                    p1 = curr;
+//                } else {
+//                    p2.next = curr;
+//                    p2 = curr;
+//                }
+//                curr = curr.next;
+//            }
+//            p1.next = d2.next;
+//            p2.next = null;
+//            head = d1.next;
+//            return head;
+//        }
+//    }
 }
 
