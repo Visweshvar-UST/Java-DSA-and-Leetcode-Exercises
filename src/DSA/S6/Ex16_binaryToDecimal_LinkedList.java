@@ -116,7 +116,8 @@ public class Ex16_binaryToDecimal_LinkedList {
         return tot;
     }
 
-
+    // https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/description/
+    // solution from course
     public int binaryToDecimalActual() {
         int num = 0;
         Node current = head;
