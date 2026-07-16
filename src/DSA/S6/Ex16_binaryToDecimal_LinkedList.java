@@ -104,6 +104,9 @@ public class Ex16_binaryToDecimal_LinkedList {
     //   |   at each node to get the decimal number.         |
     //   +===================================================+
     // with teh logic from video
+
+    // 1111-> 15
+    // 8421
     public int binaryToDecimal(){
         // if(head == null) return 0;
         int tot = 0;
@@ -118,6 +121,8 @@ public class Ex16_binaryToDecimal_LinkedList {
 
     // https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/description/
     // solution from course
+    // 1 1 1 1
+    // 8 4 2 1
     public int binaryToDecimalActual() {
         int num = 0;
         Node current = head;
