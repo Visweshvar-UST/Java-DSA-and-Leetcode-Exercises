@@ -70,7 +70,7 @@ public class Ex18_reverseBetweenOwn_LinkedList {
     //                                      //
     //////////////////////////////////////////
     public void reverseBetweenOwn(int startIndex, int endIndex){
-        if(startIndex < 0 || endIndex >= length) return;
+        if(startIndex < 0 || endIndex >= length) return; // other options are there
         int iter = endIndex - startIndex;
         Node dummy = new Node(0);
         dummy.next = head;
@@ -90,6 +90,7 @@ public class Ex18_reverseBetweenOwn_LinkedList {
     }
 
     // solution
+    //
     public void reverseBetween(int startIndex, int endIndex) {
         if (head == null) return;
 
@@ -112,5 +113,37 @@ public class Ex18_reverseBetweenOwn_LinkedList {
 
         head = dummyNode.next;
     }
+//
+//    /**
+//     * Definition for singly-linked list.
+//     * public class ListNode {
+//     *     int val;
+//     *     ListNode next;
+//     *     ListNode() {}
+//     *     ListNode(int val) { this.val = val; }
+//     *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+//     * }
+//     */
+//    https://leetcode.com/problems/reverse-linked-list-ii/
+//    class Solution {
+//        public ListNode reverseBetween(ListNode head, int left, int right) {
+//            if(head == null || left < 1) return null;
+//            ListNode dummy = new ListNode(0);
+//            dummy.next = head;
+//            ListNode pre = dummy;
+//            for(int i = 1; i < left; i++){
+//                pre = pre.next;
+//            }
+//            ListNode curr = pre.next;
+//            for(int i = 0; i < right - left; i++){
+//                ListNode moveTo = curr.next;
+//                curr.next = moveTo.next;
+//                moveTo.next = pre.next;
+//                pre.next = moveTo;
+//            }
+//            head = dummy.next;
+//            return head;
+//        }
+//    }
 
 }
