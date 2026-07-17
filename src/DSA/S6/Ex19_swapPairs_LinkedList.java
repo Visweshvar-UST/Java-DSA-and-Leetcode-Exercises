@@ -92,5 +92,26 @@ public class Ex19_swapPairs_LinkedList {
         }
         head = d.next;
     }
-    
+
+    public void swapPairs() {
+        Node dummy = new Node(0);
+        dummy.next = head;
+        Node previous = dummy;
+        Node first = head;
+
+        while (first != null && first.next != null) {
+            Node second = first.next;
+
+            // Perform the swap
+            previous.next = second;
+            first.next = second.next;
+            second.next = first;
+
+            // Move pointers
+            previous = first;
+            first = first.next;
+        }
+
+        head = dummy.next;
+    }
 }
