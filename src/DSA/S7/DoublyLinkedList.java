@@ -26,12 +26,12 @@ public class DoublyLinkedList {
         return head;
     }
 
-    public void setHead(Node head) {
-        this.head = head;
-    }
-
     public Node getTail() {
         return tail;
+    }
+
+    public int getLength() {
+        return length;
     }
 
     public void printList(){
