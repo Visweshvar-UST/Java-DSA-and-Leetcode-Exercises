@@ -138,6 +138,7 @@ public class Ex15_removeDuplicates_LinkedList {
      *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
      * }
      */
+//    Problem: same
 //    // Own solution
 //    class Solution {
 //        public ListNode deleteDuplicates(ListNode head) {

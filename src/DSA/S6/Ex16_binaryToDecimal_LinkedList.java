@@ -119,6 +119,7 @@ public class Ex16_binaryToDecimal_LinkedList {
         return tot;
     }
 
+    //    Problem: same
     // https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/description/
     // solution from course
     // 1 1 1 1

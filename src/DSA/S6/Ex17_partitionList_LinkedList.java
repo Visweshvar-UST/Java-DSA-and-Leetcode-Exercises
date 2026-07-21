@@ -132,6 +132,7 @@ public class Ex17_partitionList_LinkedList {
      *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
      * }
      */
+//    Problem: same
 //    http://leetcode.com/problems/partition-list/
 //    class Solution {
 //        public ListNode partition(ListNode head, int x) {

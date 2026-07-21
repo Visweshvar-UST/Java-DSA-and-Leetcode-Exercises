@@ -152,6 +152,7 @@ public class Ex14_findKthFromEnd_LinkedList {
      */
     /*
     // own
+//    Problem: difference not return - delete
     // https://leetcode.com/problems/remove-nth-node-from-end-of-list/
     class Solution {
         public ListNode removeNthFromEnd(ListNode head, int n) {
