@@ -8,6 +8,9 @@ public class Main {
         System.out.println(myDoublyLinkedList.getTail().value);
         System.out.println(myDoublyLinkedList.getLength());
 
+        myDoublyLinkedList.append(6);
+        System.out.println(myDoublyLinkedList.removeLast().value);
+
         myDoublyLinkedList.printList();
 
     }
