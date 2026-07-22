@@ -10,6 +10,8 @@ public class Main {
 
         myDoublyLinkedList.append(6);
         System.out.println(myDoublyLinkedList.removeLast().value);
+        myDoublyLinkedList.prepend(6);
+        System.out.println(myDoublyLinkedList.removeFirst().value);
 
         myDoublyLinkedList.printList();
 
