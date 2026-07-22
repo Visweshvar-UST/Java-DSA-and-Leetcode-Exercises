@@ -13,6 +13,11 @@ public class Main {
         myDoublyLinkedList.prepend(6);
         System.out.println(myDoublyLinkedList.removeFirst().value);
 
+        System.out.println(myDoublyLinkedList.get(0).value);
+        System.out.println(myDoublyLinkedList.get(1));
+
+        System.out.println();
+
         myDoublyLinkedList.printList();
 
     }
