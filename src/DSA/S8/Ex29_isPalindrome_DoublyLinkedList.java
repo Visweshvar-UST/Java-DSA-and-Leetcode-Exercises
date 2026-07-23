@@ -85,7 +85,7 @@ public class Ex29_isPalindrome_DoublyLinkedList {
 	//                                //
 	//                                //
 	////////////////////////////////////
-	public boolean isPalindrome(){
+	public boolean isPalindromeOwn(){
 	    if (head == tail) return true;
 	    Node h = head;
 	    Node t = tail;
@@ -97,5 +97,17 @@ public class Ex29_isPalindrome_DoublyLinkedList {
 	    return true;
 	}
 
+    public boolean isPalindrome() {
+        if (length <= 1) return true;
+
+        Node forwardNode = head;
+        Node backwardNode = tail;
+        for (int i = 0; i < length / 2; i++) {
+            if (forwardNode.value != backwardNode.value) return false;
+            forwardNode = forwardNode.next;
+            backwardNode = backwardNode.prev;
+        }
+        return true;
+    }
 }
 
