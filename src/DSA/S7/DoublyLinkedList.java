@@ -122,7 +122,7 @@ public class DoublyLinkedList {
         return false;
     }
 
-    public boolean insert(int index, int value){
+    public boolean insertOwn(int index, int value){
         if (index < 0 || index >= length) return false;
         if(index == 0) {
             prepend(value);
@@ -136,7 +136,29 @@ public class DoublyLinkedList {
             newNode.prev = temp;
             temp.next = newNode;
         }
+        length++;
         return true;
+    }
+
+
+    public Node remove(int index){
+        if (index < 0 || index >= length) return null;
+        if (index == 0) {
+            length--;
+            return removeFirst();
+        }
+        else if (index == length-1) {
+            length--;
+            return removeLast();
+        }
+        Node pre = get(index-1);
+        Node temp = pre.next;
+        pre.next = temp.next;
+        temp.next.prev = pre;
+        temp.next = null;
+        temp.prev = null;
+        length--;
+        return temp;
     }
 
 }
