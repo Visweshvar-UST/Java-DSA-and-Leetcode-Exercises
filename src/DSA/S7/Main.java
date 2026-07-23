@@ -16,6 +16,7 @@ public class Main {
         System.out.println(myDoublyLinkedList.get(0).value);
         System.out.println(myDoublyLinkedList.get(1));
 
+        myDoublyLinkedList.set(0,10);
         System.out.println();
 
         myDoublyLinkedList.printList();
