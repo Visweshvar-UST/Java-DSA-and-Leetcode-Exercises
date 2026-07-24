@@ -109,5 +109,18 @@ public class Ex29_isPalindrome_DoublyLinkedList {
         }
         return true;
     }
+
+//    not same but challenging- not DoublyLinkedList only string
+//    https://leetcode.com/problems/valid-palindrome/description/
+    class Solution {
+        public boolean isPalindrome(String s) {
+            String text = s.replaceAll("[^a-zA-Z0-9]","");
+            text = text.toLowerCase();
+            for(int i = 0; i < text.length()/2 ; i++) {
+                if(text.charAt(i) != text.charAt(text.length()-1-i)) return false;
+            }
+            return true;
+        }
+    }
 }
 
