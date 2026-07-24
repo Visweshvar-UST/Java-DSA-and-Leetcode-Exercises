@@ -1,4 +1,4 @@
-package DSA.S8;
+package DSA.S9;
 
 public class Ex29_isPalindrome_DoublyLinkedList {
 
