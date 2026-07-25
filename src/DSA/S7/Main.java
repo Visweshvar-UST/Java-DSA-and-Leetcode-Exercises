@@ -22,6 +22,7 @@ public class Main {
 
         myDoublyLinkedList.printList();
 
+        
     }
 
 }
