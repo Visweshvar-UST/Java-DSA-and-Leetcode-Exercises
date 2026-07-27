@@ -148,7 +148,6 @@ public class Ex31_partitionList_DoublyLinkedList {
         }
     }
 
-    
 }
 
 
