@@ -54,7 +54,6 @@ public class Ex31_partitionList_DoublyLinkedList {
         }
     }
     
-
     public void partitionListOwn(int x) {
         //   +===================================================+
         //   |               WRITE YOUR CODE HERE                |
