@@ -53,7 +53,7 @@ public class Ex31_partitionList_DoublyLinkedList {
             newNode.prev = current;
         }
     }
-    
+
     public void partitionListOwn(int x) {
         //   +===================================================+
         //   |               WRITE YOUR CODE HERE                |
