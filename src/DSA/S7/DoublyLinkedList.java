@@ -123,11 +123,11 @@ public class DoublyLinkedList {
     }
 
     public boolean insertOwn(int index, int value){
-        if (index < 0 || index >= length) return false;
+        if (index < 0 || index > length) return false;
         if(index == 0) {
             prepend(value);
-        } else if (index == length-1) {
-            append(value);
+        } else if (index == length) { // equal length not -1
+            append(value); // need return true only not length ++ nee to check already using methods.
         } else {
             Node newNode = new Node(value);
             Node temp = get(index-1);
