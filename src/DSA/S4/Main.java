@@ -12,6 +12,7 @@ public class Main {
 
         ll.append(4);
 
+
         System.out.println(ll.removeLast().value);
         System.out.println(ll.removeLast().value);
         System.out.println(ll.removeLast());
