@@ -26,11 +26,11 @@ public class Stack {
         }
     }
 
-    public Node getTop() {
-        return top;
+    public void getTop() {
+        System.out.println("Top: "+top);
     }
 
-    public int getHeight() {
-        return height;
+    public void getHeight() {
+        System.out.println("Height: "+height);
     }
 }
