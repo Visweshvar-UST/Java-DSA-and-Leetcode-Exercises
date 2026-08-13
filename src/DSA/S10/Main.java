@@ -24,5 +24,9 @@ public class Main {
         myQueue.getLength();
 
         myQueue.printQueue();
+
+        myQueue.enQueue(8);
+
+        myQueue.printQueue();
     }
 }
