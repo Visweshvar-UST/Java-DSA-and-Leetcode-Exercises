@@ -12,5 +12,17 @@ public class Main {
         myStack.push(5);
 
         myStack.printStack();
+
+        System.out.println(myStack.pop().value);
+
+        System.out.println("****QUEUE****");
+
+        Queue myQueue = new Queue(7);
+
+        myQueue.getFirst();
+        myQueue.getLast();
+        myQueue.getLength();
+
+        myQueue.printQueue();
     }
 }
