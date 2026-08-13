@@ -9,5 +9,8 @@ public class Main {
 
         myStack.printStack();
 
+        myStack.push(5);
+
+        myStack.printStack();
     }
 }
