@@ -28,7 +28,7 @@ public class Main {
         myQueue.enQueue(8);
 
         myQueue.printQueue();
-        
+
         myQueue.deQueue();
 
         myQueue.printQueue();
