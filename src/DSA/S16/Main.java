@@ -11,6 +11,9 @@ public class Main {
         myHashTable.set("screw",15);
         myHashTable.set("bolts",15);
 
+        System.out.println(myHashTable.get("lumber"));
+        System.out.println(myHashTable.get("tool"));
+
         myHashTable.printTable();
     }
 }
