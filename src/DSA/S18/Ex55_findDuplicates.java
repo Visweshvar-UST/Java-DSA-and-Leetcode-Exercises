@@ -13,7 +13,6 @@ public class Ex55_findDuplicates {
         return res;
     }
 
-
     public static void main(String[] args) {
         System.out.println("These tests confirm findDuplicates() correctly");
         System.out.println("identifies all elements that occur more than once.");
